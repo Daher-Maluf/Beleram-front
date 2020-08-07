@@ -1,3 +1,6 @@
+#Beleram
+Es un ejemplo de un simple blog hecho en angular. EL hecho que sea de codigo abierto lo hace totalmente personalizable y abierto a contribuciones.
+
 # Frontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
