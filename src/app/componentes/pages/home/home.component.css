@@ -1,22 +1,33 @@
 .container{
     margin-top: 25px;
     display:grid;
-    grid-template-columns:24% 24% 24% 24%;
+    grid-template-columns:24% 24% 24% 24% ;
     grid-column-gap: 10px;
     grid-row-gap: 15px;
     justify-content: center;
+    
 }
 .container a{
     cursor: pointer;
-    color: #ff4d00;
+    color: #443737;
     text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+.footer{
+    font-size: 16px;
 }
 
+
+
 .post-card{
-    background: #212121;
-    color: #E7E7E7;
+    
+    background: #fff;
+    color: #443737;
     padding: 20px;
     font-size:150%;
+    box-shadow: 0 5px 25px 0 rgba(0,0,0, .25);
+    font-family: 'Poppins', sans-serif;
 }
 
 img{
