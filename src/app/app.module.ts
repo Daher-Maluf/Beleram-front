@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { ToolbarComponent } from './compartido/componentes/toolbar/toolbar.component';
+import { ContainerAppComponent } from './componentes/pages/container-app/container-app.component';
 
 
 
@@ -17,6 +18,7 @@ import { ToolbarComponent } from './compartido/componentes/toolbar/toolbar.compo
   declarations: [
     AppComponent,
     ToolbarComponent,
+    ContainerAppComponent,
    
 
    

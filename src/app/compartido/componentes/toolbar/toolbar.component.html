@@ -1,21 +1,19 @@
-<mat-toolbar >
-  <mat-toolbar-row class="first-row">
-    
-  </mat-toolbar-row>
-  <mat-toolbar-row class="toolbar">
+<mat-toolbar  class="mat-elevation-z5" color="primary">
+ 
+  <mat-toolbar-row class="toolbar" >
   <span style="font-size: 60px; color: #C30E2E;"><i class="fab fa-angular"></i></span>
-    <a class="brand" routerLink="/">Blog</a>
+    <a class="brand cool-link" routerLink="/">Blog</a>
     <span class="fill-remaining-space"></span>
-    <a routerLink="/admin" routerLinkActive="active" >
+    <a routerLink="/admin" routerLinkActive="active" class="cool-link">
       <button mat-button color="warn">Admin</button>
     </a>
   
-    <a routerLink="/about" routerLinkActive="active">
+    <a routerLink="/about" routerLinkActive="active" class="cool-link">
       <button mat-button color="warn">About</button>
     </a>
   
-    <a >
-      <button mat-button color="warn">Contact</button>
+    <a routerLink="/login" routerLinkActive="active" class="cool-link" >
+      <button mat-button >Login</button>
     </a>
   </mat-toolbar-row>
     
