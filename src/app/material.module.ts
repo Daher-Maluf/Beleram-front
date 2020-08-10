@@ -8,12 +8,14 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
+import {MatInputModule} from '@angular/material/input';
 import {MatDividerModule} from '@angular/material/divider';
 
 
 
 const myMaterialModules = [
   MatFormFieldModule,
+  MatInputModule,
   MatCardModule,
   MatButtonModule,
   MatIconModule,

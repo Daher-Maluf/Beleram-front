@@ -1,0 +1,33 @@
+:host{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+input{
+    font-family: 'Poppins', sans-serif;
+}
+
+mat-form-field{
+    width: 100%;
+    min-width: 300px;
+}
+
+
+mat-card-content{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+mat-card-title{
+    font-size: 30px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+button{
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+}

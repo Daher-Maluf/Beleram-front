@@ -2,29 +2,45 @@ a button{
     color: #443737;
     text-decoration: none;
     font-size: 16px;
+    font-family: 'Nunito', sans-serif;
     
    
  
 
 }
-.active{
-    border-bottom: 2px solid;
+.cool-link::after{
+    content: '';
+    display:block;
+    width: 0;
+    height:3px;
+    background: #443737;
+    transition: width .3s
+}
+.cool-link:hover::after{
+    width: 100%;
+    transition: width .3s;
+
 }
 a{
     color: #443737;
     text-decoration: none;
+    font-family: 'Nunito', sans-serif;
 }
 .toolbar{
     background: #FFFFFF;
-    font-family: 'Nunito', sans-serif;
-    box-shadow: 0 0 1px 0 rgba(0,0,0, .25);
+    
+    /* box-shadow: 0 0 1px 0 rgba(0,0,0, .25); */
     
     
 }
 .first-row{
     background: #272121;
-    height: 10px;
+    height: 30px;
+    justify-content: center;
+    display: flex;
+
 }
+
 
 .brand{
     font-size: 34px;
