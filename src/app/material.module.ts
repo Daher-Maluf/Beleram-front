@@ -10,10 +10,13 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatInputModule} from '@angular/material/input';
 import {MatDividerModule} from '@angular/material/divider';
-
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 
 const myMaterialModules = [
+  MatTableModule,
   MatFormFieldModule,
   MatInputModule,
   MatCardModule,
@@ -23,7 +26,10 @@ const myMaterialModules = [
   MatMenuModule,
   MatSidenavModule,
   MatListModule,
-  MatDividerModule
+  MatDividerModule,
+  MatPaginatorModule,
+  MatSortModule
+  
 
 ]
 

@@ -2,10 +2,11 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: #272121;
+    background: #050505;
 }
 mat-icon{
     cursor:pointer;
+    color: #fff;
 }
 .side-icon{
     color: #fff
@@ -17,7 +18,7 @@ a{
 mat-sidenav{
     width: 200px;
     cursor: pointer;
-    background: #443737;
+    background: #221f3b;
     position: fixed;
     top: 55px;
     z-index: 1000;
