@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import {MatTableDataSource} from '@angular/material/table';
 import{MatPaginator} from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
@@ -28,7 +28,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   templateUrl: './tabla.component.html',
   styleUrls: ['./tabla.component.css']
 })
-export class TablaComponent implements OnInit {
+export class TablaComponent implements OnInit, AfterViewInit {
   
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
@@ -38,9 +38,12 @@ export class TablaComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
+    
+  }
+  ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
-    
   }
   applyFilter(filterValue: string) {
     this.dataSource.filter = filterValue.trim().toLowerCase();
