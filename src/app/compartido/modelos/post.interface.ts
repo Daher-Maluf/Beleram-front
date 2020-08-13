@@ -1,8 +1,9 @@
-export interface PostI{
-    titlePost: string;
-    contentPost: string;
+export interface Post{
+    _id: string;
+    title: string;
+    content: string;
     
-    imagePost?: string;
-    id: string;
-    fileRef?:string;
+    imageURL?: string;
+    public_id: string;
+    
 }
