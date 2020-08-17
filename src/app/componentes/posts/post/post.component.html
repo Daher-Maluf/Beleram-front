@@ -5,15 +5,15 @@
           
             
         </mat-card-header>
-        <img class="card-img" matCardImage [src]="post.imagePost">
+        <img src="{{post.imageURL}}" alt="">
         <mat-card-content>
             <mat-card-title class="mat-card-title">
                 
-                {{post.titlePost}}
+                {{post.title}}
             
         </mat-card-title>
           <p class="content">
-              {{post.contentPost}}
+              {{post.content}}
           </p>
         </mat-card-content>
         <mat-card-actions align="start">

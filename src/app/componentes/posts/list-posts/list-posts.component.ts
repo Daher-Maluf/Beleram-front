@@ -1,5 +1,7 @@
 import { PostService } from './../post.service';
 import { Component, OnInit } from '@angular/core';
+import Post from "../../../compartido/modelos/post.interface";
+
 
 @Component({
   selector: 'app-list-posts',
@@ -10,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 export class ListPostsComponent implements OnInit {
 
   // Propiety with posts
-  public posts: Array<Object>;
+  public posts: Array<Post>;
 
   constructor(
     private _postService: PostService
@@ -20,7 +22,7 @@ export class ListPostsComponent implements OnInit {
 
   ngOnInit(): void {
     this._postService.getAllPosts().subscribe(
-      (result: Array<Object>) => {
+      (result: Array<Post>) => {
         result.forEach((element, i) => {
           this.posts.push(element);
         });
