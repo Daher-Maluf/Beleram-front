@@ -1,6 +1,6 @@
 export default class Post {
     // tslint:disable-next-line: variable-name
-    id: string;
+    _id: string;
     title: string;
     content: string;
 
