@@ -1,9 +1,11 @@
-export interface Post{
-    _id: string;
+export default class Post {
+    // tslint:disable-next-line: variable-name
+    id: string;
     title: string;
     content: string;
-    
+
     imageURL?: string;
-    public_id: string;
-    
+    // tslint:disable-next-line: variable-name
+    public_id?: string;
+
 }
