@@ -6,30 +6,30 @@ import { ContainerAppComponent } from './componentes/pages/container-app/contain
 
 const routes: Routes = [
     {path: '', component: ContainerAppComponent,
-      children:[
+      children: [
         {
           path: 'home',
           loadChildren: () =>
             import('./componentes/pages/home/home.module').then(m => m.HomeModule)
         },
-      
+
         {path: 'post/:id', component: PostComponent},
 
           { path: 'about',
-           loadChildren: () => 
-             import('./componentes/pages/about/about.module').then(m => m.AboutModule) 
+           loadChildren: () =>
+             import('./componentes/pages/about/about.module').then(m => m.AboutModule)
             },
-        {path:'', redirectTo:'home',
+        {path: '', redirectTo: 'home',
                   pathMatch: 'full'
          }
 
       ]
     },
-   
+
     { path: 'admin', loadChildren: () => import('./componentes/admin/admin.module').then(m => m.AdminModule) },
     { path: 'login', loadChildren: () => import('./componentes/auth/login/login.module').then(m => m.LoginModule) },
-   
-  
+
+
 ];
 
 @NgModule({

@@ -1,6 +1,7 @@
-export interface fileI{
+// tslint:disable-next-line: class-name
+export default class fileI {
     name: string;
     imageFile: File;
     size: string;
-    type:string;
+    type: string;
 }
