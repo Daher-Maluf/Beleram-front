@@ -9,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListPostsComponent implements OnInit {
 
-  public posts: [];
+  // Propiety with posts
+  public posts: Array<Object>;
 
   constructor(
     private _postService: PostService
@@ -19,10 +20,11 @@ export class ListPostsComponent implements OnInit {
 
   ngOnInit(): void {
     this._postService.getAllPosts().subscribe(
-      result => {
+      (result: Array<Object>) => {
         result.forEach((element, i) => {
           this.posts.push(element);
         });
+        console.log(this.posts)
       },
       err => {
         console.log(err)
