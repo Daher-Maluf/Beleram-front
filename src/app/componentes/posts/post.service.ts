@@ -18,6 +18,11 @@ export class PostService {
   getAllPosts() {
    return this.webService.get('posts');
   }
+
+  getPost(_id: string){
+    return this.webService.get("post/" + _id);
+  }
+
   createPost(title: string) {
     return this.webService.post('save-post', {title});
   }
