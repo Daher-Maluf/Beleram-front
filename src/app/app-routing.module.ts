@@ -2,7 +2,7 @@ import { ListPostsComponent } from './componentes/posts/list-posts/list-posts.co
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {PostComponent } from './componentes/posts/post/post.component';
-import { ContainerAppComponent } from './componentes/pages/container-app/container-app.component';
+import { ContainerAppComponent } from '././componentes/pages/container-app/container-app.component';
 
 
 const routes: Routes = [
@@ -18,7 +18,7 @@ const routes: Routes = [
         
           { path: 'about',
            loadChildren: () =>
-             import('./componentes/pages/about/about.module').then(m => m.AboutModule)
+             import('././componentes/pages/about/about.module').then(m => m.AboutModule)
             },
         {path: '', redirectTo: 'home',
                   pathMatch: 'full'
@@ -27,8 +27,8 @@ const routes: Routes = [
       ]
     },
 
-    { path: 'admin', loadChildren: () => import('./componentes/admin/admin.module').then(m => m.AdminModule) },
-    { path: 'login', loadChildren: () => import('./componentes/auth/login/login.module').then(m => m.LoginModule) },
+    { path: 'admin', loadChildren: () => import('././componentes/admin/admin.module').then(m => m.AdminModule) },
+    { path: 'login', loadChildren: () => import('././componentes/auth/login/login.module').then(m => m.LoginModule) },
 
 
 ];
