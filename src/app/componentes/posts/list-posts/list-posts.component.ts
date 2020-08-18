@@ -26,7 +26,6 @@ export class ListPostsComponent implements OnInit {
         result.forEach((element, i) => {
           this.posts.push(element);
         });
-        console.log(this.posts)
       },
       err => {
         console.log(err)
