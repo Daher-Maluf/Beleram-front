@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-//modulos
+// modulos
 
 
 import { AppComponent } from './app.component';
@@ -22,22 +22,22 @@ import { ContainerAppComponent } from './componentes/pages/container-app/contain
     AppComponent,
     ToolbarComponent,
     ContainerAppComponent,
-    
-   
 
-   
+
+
+
   ],
   imports: [
-    
-    BrowserModule,
-    RouterModule,
+
+   BrowserModule,
+   RouterModule,
    AppRoutingModule,
    BrowserAnimationsModule,
    MaterialModule,
    HttpClientModule,
    CommonModule
-   
-   
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
