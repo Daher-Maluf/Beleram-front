@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient} from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
@@ -23,6 +23,12 @@ export class WebService {
   }
   delete(uri: string) {
     return this.http.delete(`${this.ROOT_URL}/${uri}`);
+  }
+  postObject(uri: string, payload: Object){
+    let params = JSON.stringify(payload);
+    let headers = new HttpHeaders().set("Content-type", "application/json");
+
+    return this.http.post(`${this.ROOT_URL}/${uri}`, params, {headers});
   }
 
   // Service to send images

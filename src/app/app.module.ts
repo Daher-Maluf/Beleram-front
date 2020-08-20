@@ -1,8 +1,11 @@
+import { AdminComponent } from './componentes/admin/admin.component';
+import { LoginComponent } from './componentes/auth/login/login.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from "@angular/forms"
 //modulos
 
 
@@ -35,7 +38,13 @@ import { ContainerAppComponent } from './componentes/pages/container-app/contain
    BrowserAnimationsModule,
    MaterialModule,
    HttpClientModule,
-   CommonModule
+   CommonModule,
+   FormsModule,
+   RouterModule.forRoot([
+     {path: "", redirectTo: "/", pathMatch: "full"},
+     {path: "login", component: LoginComponent},
+     {path: "admin", component: AdminComponent}
+   ])
    
    
   ],

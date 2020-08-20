@@ -4,7 +4,7 @@ export default class Post {
     title: string;
     content: string;
 
-    imageURL?: string;
+    imageURL?: any;
     // tslint:disable-next-line: variable-name
     public_id?: string;
 

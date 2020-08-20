@@ -11,7 +11,7 @@ import Post from "../../../compartido/modelos/post.interface";
 })
 export class PostComponent implements OnInit {
 
-  public post: Post;
+  public post: Post = new Post();
 
   constructor(
     private _postService: PostService,
