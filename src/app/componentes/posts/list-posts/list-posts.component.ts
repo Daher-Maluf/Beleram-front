@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PostService } from '../post.service';
+import Post from '../../../compartido/modelos/post.interface';
 
 @Component({
   selector: 'app-list-posts',
@@ -6,12 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-posts.component.css']
 })
 export class ListPostsComponent implements OnInit {
+   // Propiety with posts
+   public posts: Array<Post>;
 
-  constructor() { }
+
+  // tslint:disable-next-line: variable-name
+  constructor(private _postService: PostService) { 
+    this.posts = [];
+  }
 
   ngOnInit(): void {
-<<<<<<< HEAD
-=======
     this._postService.getAllPosts().subscribe(
       (result: Array<Post>) => {
         result.forEach((element, i) => {
@@ -19,10 +25,9 @@ export class ListPostsComponent implements OnInit {
         });
       },
       err => {
-        console.log(err)
+        console.log(err);
       }
-    )
->>>>>>> aa02e2683976d1c051d1aff51bb0a1fb2bbc67de
+    );
   }
 
 }

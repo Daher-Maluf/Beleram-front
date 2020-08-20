@@ -66,7 +66,8 @@ console.log('edit post', post);
   // }
   onDeletePost(id: string){
   
-   this.postService.deletePost(id)
+   console.log(id);
+   
    
 
   }

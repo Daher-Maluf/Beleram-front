@@ -5,12 +5,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-<<<<<<< HEAD
-// modulos
-=======
 import { FormsModule } from "@angular/forms"
 //modulos
->>>>>>> aa02e2683976d1c051d1aff51bb0a1fb2bbc67de
 
 
 import { AppComponent } from './app.component';
@@ -42,11 +38,6 @@ import { ContainerAppComponent } from './componentes/pages/container-app/contain
    BrowserAnimationsModule,
    MaterialModule,
    HttpClientModule,
-<<<<<<< HEAD
-   CommonModule
-
-
-=======
    CommonModule,
    FormsModule,
    RouterModule.forRoot([
@@ -56,7 +47,6 @@ import { ContainerAppComponent } from './componentes/pages/container-app/contain
    ])
    
    
->>>>>>> aa02e2683976d1c051d1aff51bb0a1fb2bbc67de
   ],
   providers: [],
   bootstrap: [AppComponent]
