@@ -4,7 +4,7 @@
   <span style="font-size: 60px; color: #C30E2E;"><i class="fab fa-angular"></i></span>
     <a class="brand cool-link" routerLink="/">Blog</a>
     <span class="fill-remaining-space"></span>
-    <a routerLink="/admin" routerLinkActive="active" class="cool-link">
+    <a *ngIf="status" routerLink="/admin" routerLinkActive="active" class="cool-link">
       <button mat-button color="warn">Admin</button>
     </a>
   

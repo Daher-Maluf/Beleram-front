@@ -13,7 +13,10 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class PostComponent implements OnInit {
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> aa02e2683976d1c051d1aff51bb0a1fb2bbc67de
   public post: Post = new Post();
 
   constructor(
