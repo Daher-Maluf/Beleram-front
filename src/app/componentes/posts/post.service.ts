@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { WebService } from 'src/app/web.service';
-import Post from '../../compartido/modelos/post.interface';
+import { Observable } from 'rxjs';
+
 
 
 
@@ -15,25 +16,30 @@ export class PostService {
   constructor(private webService: WebService) {
 
   }
-  getAllPosts() {
+ public getAllPosts() {
    return this.webService.get('posts');
   }
 
-  getPost(_id: string){
-    return this.webService.get("post/" + _id);
+  // tslint:disable-next-line: variable-name
+  public getPost(_id: string): Observable<any> {
+    return this.webService.get('post/' + _id);
   }
 
-  createPost(title: string) {
+ public createPost(title: string): Observable<any> {
     return this.webService.post('save-post', {title});
   }
 
-  updatePost(title: string, _id: string) {
+  // tslint:disable-next-line: variable-name
+ public updatePost(title: string, _id: string): Observable<any> {
     return this.webService.patch(`update-post/${_id}`, {title});
   }
 
-  deletePost( _id: string) {
+  // tslint:disable-next-line: variable-name
+ public deletePost( _id: string): Observable<any> {
     return this.webService.delete(`delete-post/${_id}`);
   }
+
+  
 
 
 
